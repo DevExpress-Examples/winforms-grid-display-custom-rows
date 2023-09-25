@@ -3,15 +3,17 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3367)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# How to put custom rows in grid control
+# WinForms Data Grid - Add custom data rows
 
+This example demonstrates how to display custom rows (ordinal, blank/group, and summary) in the WinForms Data Grid. Custom rows do not exist in the grid's data source. Custom rows support data editing, sorting, and grouping.
 
-<p>This example demonstrates how to place a custom row (ordinal, blank and summary) to GridView. By default, GridView does not provide the capability to add custom rows. It just displays rows provided by its DataSourse. This functionality can be accomplished by creating a wrapper for the datasource to pass  additional rows to GridControl. Actually, this will be  regular editable rows and it is necessary to customize their behavior: <br />
-1. Force this row to be always displayed on the required position regardless of the current sorting. This can be done via the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraGridViewsBaseColumnView_CustomColumnSorttopic"><u>ColumnView.CustomColumnSort</u></a>  event.<br />
-2.Prevent editing in non-editable rows such as summary rows and blank rows with the text. This can be done via the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraGridViewsBaseColumnView_ShowingEditortopic"><u>ColumnView.ShowingEditor</u></a>  event.<br />
-3. Create grouping logic for custom rows and implement it in the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraGridViewsGridGridView_CustomColumnGrouptopic"><u>GridView.CustomColumnGroup</u></a> event handler. Handle the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraGridViewsGridGridView_CustomDrawGroupRowtopic"><u>CustomDrawGroupRow</u></a> event to display a correct custom group text.</p><p>This example is based on the <a href="https://www.devexpress.com/Support/Center/p/E1180">How to create a data source wrapper that adds an empty item to the lookup list</a> example.</p><br />
+The example creates a data source wrapper and handles the following events:
 
+* The [CustomColumnSort](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.CustomColumnSort) event is handled to display custom rows at the specified position regardless of sorting.
+* The [ShowingEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShowingEditor) event is handled to prevent editing blank and summary custom rows.
+* The [CustomColumnGroup](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.CustomColumnGroup) event is handled to group custom rows. The [CustomDrawGroupRow](docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawGroupRow) event is handled to display text within a custom group row.
+                                                                        
 
-<br/>
+## See Also
 
-
+* [WinForms Lookup - Add an empty item to the dropdown list](https://supportcenter.devexpress.com/ticket/details/e1180/how-to-create-a-data-source-wrapper-that-adds-an-empty-item-to-the-lookup-list)

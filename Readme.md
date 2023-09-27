@@ -11,7 +11,7 @@ The example creates a data source wrapper and handles the following events:
 
 * The [CustomColumnSort](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.CustomColumnSort) event is handled to display custom rows at the specified position regardless of sorting.
 * The [ShowingEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.ColumnView.ShowingEditor) event is handled to prevent editing blank and summary custom rows.
-* The [CustomColumnGroup](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.CustomColumnGroup) event is handled to group custom rows. The [CustomDrawGroupRow](docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawGroupRow) event is handled to display text within a custom group row.
+* The [CustomColumnGroup](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.CustomColumnGroup) event is handled to group custom rows. The [CustomDrawGroupRow](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridView.CustomDrawGroupRow) event is handled to display text within a custom group row.
                                                                         
 
 ## See Also

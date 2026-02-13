@@ -19,7 +19,7 @@ The example creates a data source wrapper and handles the following events:
 
 * [WinForms Lookup - Add an empty item to the dropdown list](https://supportcenter.devexpress.com/ticket/details/e1180/how-to-create-a-data-source-wrapper-that-adds-an-empty-item-to-the-lookup-list)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-grid-display-custom-rows&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-grid-display-custom-rows&~~~was_helpful=no)
 
